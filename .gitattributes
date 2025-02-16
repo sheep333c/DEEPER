@@ -2,3 +2,4 @@ data/data_train/deeper/iteration1/context_1.jsonl filter=lfs diff=lfs merge=lfs 
 data/data_train/deeper/iteration1/dpo_pairs_1.jsonl filter=lfs diff=lfs merge=lfs -text
 data/data_train/deeper/iteration2/context_2.jsonl filter=lfs diff=lfs merge=lfs -text
 data/data_train/deeper/iteration2/dpo_pairs_2.jsonl filter=lfs diff=lfs merge=lfs -text
+data/data_train/**/*.jsonl filter=lfs diff=lfs merge=lfs -text
