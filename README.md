@@ -191,3 +191,18 @@ The comparison includes the following methods:
 
 Each method refines personas based on the same user behavior stream. DEEPER produces more **coherent**, **progressively accurate**, and **non-redundant** persona descriptions over iterations.
 
+---
+
+## Citation Information
+
+If our paper or related resources prove valuable to your research, we kindly ask for citation. 
+
+
+```
+@article{chen2025deeper,
+  title={Deeper insight into your user: Directed persona refinement for dynamic persona modeling},
+  author={Chen, Aili and Du, Chengyu and Chen, Jiangjie and Xu, Jinghan and Zhang, Yikai and Yuan, Siyu and Chen, Zulong and Li, Liangyue and Xiao, Yanghua},
+  journal={arXiv preprint arXiv:2502.11078},
+  year={2025}
+}
+```
