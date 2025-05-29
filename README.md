@@ -4,20 +4,6 @@
 
 <h1 align="center">DEEPER: Directed Persona Refinement for Dynamic Persona Modeling</h1>
 
-<p align="center">
-  <a href="https://arxiv.org/abs/2502.11078">📄 Paper</a> •
-  <a href="https://github.com/sheep333c/DEEPER.git">💻 Project Page</a> •
-  <a href="https://huggingface.co/deeper-team/DEEPER-llama-8B">🤖 Model</a> •
-  <a href="https://huggingface.co/deeper-team">📂 Dataset Hub</a>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/license-MIT-blue.svg"/>
-  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen"/>
-  <img src="https://img.shields.io/badge/version-1.0-yellow"/>
-</p>
-
----
 
 <p align="center">
   <sup>1</sup> <a href="https://scholar.google.com/citations?user=FAJzMAQAAAAJ&hl=zh-CN">Aili Chen</a> &nbsp;&nbsp;
@@ -31,8 +17,27 @@
 <p align="center">
   Affiliation: Fudan University
 </p>
----
 
+
+<p align="center">
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg"/>
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen"/>
+  <img src="https://img.shields.io/badge/version-1.0-yellow"/>
+</p>
+
+
+<p align="center">
+  <a href="https://arxiv.org/abs/2502.11078">📄 Paper</a> •
+  <a href="https://github.com/sheep333c/DEEPER.git">💻 Project Page</a> •
+  <a href="https://huggingface.co/deeper-team/DEEPER-llama-8B">🤖 Model</a> •
+  <a href="https://huggingface.co/deeper-team">📂 Dataset Hub</a>
+</p>
+
+
+
+
+
+---
 ## 🔍 Overview
 
 DEEPER proposes a new *refinement-based paradigm* for **dynamic persona modeling**, addressing the limitations of traditional regeneration and extension methods.
