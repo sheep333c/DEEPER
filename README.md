@@ -45,7 +45,7 @@
 DEEPER proposes a new *refinement-based paradigm* for **dynamic persona modeling**, addressing the limitations of traditional regeneration and extension methods.
 
 <p align="center">
-  <img src="src/paradigm.png" alt="DEEPER Paradigm Diagram" width="400"/>
+  <img src="src/paradigm.png" alt="DEEPER Paradigm Diagram" width="350"/>
 </p>
 <p align="center"><i>Figure 1: The refinement-based paradigm of DEEPER across multi-turn persona evolution.</i></p>
 
