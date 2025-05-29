@@ -45,6 +45,12 @@
 
 DEEPER proposes a new *refinement-based paradigm* for **dynamic persona modeling**, addressing the limitations of traditional regeneration and extension methods.
 
+<p align="center">
+  <img src="src/Paradigm.png" alt="DEEPER Paradigm Diagram" width="750"/>
+</p>
+
+<p align="center"><i>Figure: The refinement-based paradigm of DEEPER across multi-turn persona evolution.</i></p>
+
 Instead of blindly updating user personas, DEEPER leverages **prediction-behavior discrepancies** to guide update **directions**, enabling:
 - ✨ Continual persona optimization  
 - 🔄 Iterative refinement via RL  
@@ -137,4 +143,21 @@ user_context_train/
 We construct the final training set using DEEPER’s self-sampling and iterative optimization framework, fine-tuned over two iterations.
 
 🔗 [Browse the DEEPER Train Dataset on HuggingFace](https://huggingface.co/datasets/deeper-team/DEEPER_train_data)
+
+
+### 🔄 4. Evolving Personas over Four Update Rounds
+
+We visualize how personas evolve over four refinement rounds using **DEEPER** and baseline methods. This qualitative analysis highlights DEEPER's ability to generate increasingly accurate and user-aligned personas.
+
+🔗 [Browse the Evolving Personas Dataset on HuggingFace](https://huggingface.co/datasets/deeper-team/evolving_personas/tree/main)
+
+The comparison includes the following methods:
+
+- ✅ **DEEPER (ours)** — refinement-based persona modeling via discrepancy-driven updates  
+- 🔁 **Incremental Update** — appends new behavior traits to the previous persona directly  
+- 🧩 **Hierarchical Merge** — merges prior and current personas using hierarchical rules 
+- 🧱 **Full Regeneration** — regenerates the entire persona from scratch at each iteration  
+- 📉 **Slide Regeneration** — generates new persona using only the latest time window, ignoring past
+
+Each method refines personas based on the same user behavior stream. DEEPER produces more **coherent**, **progressively accurate**, and **non-redundant** persona descriptions over iterations.
 
