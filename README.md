@@ -40,7 +40,6 @@
 
 
 
----
 ## 🔍 Overview
 
 DEEPER proposes a new *refinement-based paradigm* for **dynamic persona modeling**, addressing the limitations of traditional regeneration and extension methods.
@@ -48,13 +47,19 @@ DEEPER proposes a new *refinement-based paradigm* for **dynamic persona modeling
 <p align="center">
   <img src="src/paradigm.png" alt="DEEPER Paradigm Diagram" width="400"/>
 </p>
-
-<p align="center"><i>Figure: The refinement-based paradigm of DEEPER across multi-turn persona evolution.</i></p>
+<p align="center"><i>Figure 1: The refinement-based paradigm of DEEPER across multi-turn persona evolution.</i></p>
 
 Instead of blindly updating user personas, DEEPER leverages **prediction-behavior discrepancies** to guide update **directions**, enabling:
 - ✨ Continual persona optimization  
-- 🔄 Iterative refinement via RL  
+- 🔄 Iterative refinement via offline RL framework  
 - 🎯 Improved user behavior prediction across domains
+
+<br>
+
+<p align="center">
+  <img src="src/method.png" alt="DEEPER Method Diagram" width="750"/>
+</p>
+<p align="center"><i>Figure 2: DEEPER includes two rounds of offline preference optimization, followed by online step-wise persona refinement.</i></p>
 
 ---
 
@@ -65,7 +70,7 @@ Instead of blindly updating user personas, DEEPER leverages **prediction-behavio
   - ✅ Current Reflection  
   - ✅ Future Advancement  
 
-- Two-stage **iterative RL training** with DPO (Direct Preference Optimization)
+- Two-stage **iterative training** with DPO (Direct Preference Optimization)
 
 - Evaluated on 4 datasets across **10 domains**, supporting both seen/unseen domain generalization
 
