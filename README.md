@@ -34,45 +34,65 @@
 </p>
 
 
+## 🎯 Overview
 
-
-
-
-
-
-## 🔍 Overview
-
-DEEPER proposes a new *refinement-based paradigm* for **dynamic persona modeling**, addressing the limitations of traditional regeneration and extension methods.
+**DEEPER** introduces a novel *refinement-based paradigm* for **dynamic persona modeling**, addressing the fundamental limitations of traditional **regeneration** (replacing personas) and **extension** (incrementally appending behaviors) approaches.
 
 <p align="center">
   <img src="src/paradigm.png" alt="DEEPER Paradigm Diagram" width="350"/>
 </p>
-<p align="center"><i>Figure 1: The refinement-based paradigm of DEEPER across multi-turn persona evolution.</i></p>
+<p align="center"><i>Figure 1: DEEPER's refinement paradigm enables directed persona evolution via prediction-behavior feedback.</i></p>
 
-Instead of blindly updating user personas, DEEPER leverages **prediction-behavior discrepancies** to guide update **directions**, enabling:
-- ✨ Continual persona optimization  
-- 🔄 Iterative refinement via offline RL framework  
-- 🎯 Improved user behavior prediction across domains
+Unlike prior work that updates user personas in a static or heuristic manner, DEEPER leverages **prediction–behavior discrepancies** to guide *update directions* in a structured, reward-driven way. This enables:
 
-<br>
+- ✨ **Continual persona optimization** over time  
+- 🔄 **Iterative refinement** via offline reinforcement learning  
+- 🎯 **Improved behavior prediction** across both seen and unseen domains  
+
+---
+
+## ⚙️ Method Highlights
 
 <p align="center">
   <img src="src/method.png" alt="DEEPER Method Diagram" width="750"/>
 </p>
-<p align="center"><i>Figure 2: DEEPER includes two rounds of offline preference optimization, followed by online step-wise persona refinement.</i></p>
+<p align="center"><i>Figure 2: Two-stage offline training with DPO, followed by online refinement guided by behavior-prediction error.</i></p>
+
+- 🧭 **Tri-objective reward design** for refinement direction search:
+  - **Previous Preservation** (retain stable traits)
+  - **Current Reflection** (adapt to recent behaviors)
+  - **Future Advancement** (enhance predictive capability)
+
+- 🤖 **Two-stage iterative training**:
+  - Stage 1: Refine initial personas via reward-supervised sampling  
+  - Stage 2: Fine-tune on optimized personas with broader preference margins  
+  - Training is based on **Direct Preference Optimization (DPO)**, integrating both preference and supervised losses
+
+- 🔍 **Discrepancy-driven refinement**:
+  - Uses prediction errors as feedback signals to inform how personas should evolve—bridging the gap between behavior space (e.g., ratings) and latent persona space.
 
 ---
 
-## 🚀 Features
+## 📊 Experimental Results
 
-- A novel **three-goal objective**:  
-  - ✅ Previous Preservation  
-  - ✅ Current Reflection  
-  - ✅ Future Advancement  
+- 🔁 **Continual Optimization**:  
+  Achieves **32.2% average MAE reduction** over four rounds—significantly outperforming regeneration- and extension-based methods.
 
-- Two-stage **iterative training** with DPO (Direct Preference Optimization)
+- 🌍 **Cross-Domain Generalization**:  
+  Maintains strong performance on unseen domains (e.g., *Arts Crafts & Sewing*), with up to **36.4% MAE reduction**, surpassing seen-domain performance (29.4%).
 
-- Evaluated on 4 datasets across **10 domains**, supporting both seen/unseen domain generalization
+- 🌀 **Domain-Specific Dynamics**:  
+  Optimization speed varies by domain (e.g., fast convergence in *Automotive*, gradual in *Movies & TV*), revealing DEEPER’s ability to adapt to domain complexities.
+
+---
+
+## 🚀 Features Summary
+
+- ✅ Novel *refinement-based* dynamic persona modeling  
+- ✅ Tri-objective reward function: preservation, reflection, advancement  
+- ✅ Two-stage DPO-based iterative refinement  
+- ✅ Generalizes across **10 domains**, including 4 unseen during training  
+- ✅ Open-source implementation and reproducible pipeline
 
 ---
 
