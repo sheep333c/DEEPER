@@ -81,7 +81,7 @@ pip install -e ".[torch,metrics]" --no-build-isolation
 ---
 
 ## 📂 Data
-We organize the DEEPER dataset into three key components, all available via our [📂 HuggingFace Dataset Hub](https://huggingface.co/deeper-team):
+We organize the DEEPER dataset into four key components, all available via our [📂 HuggingFace Dataset Hub](https://huggingface.co/deeper-team):
 
 ### 📌 1. Preprocessed Data
 We curated real-world user behavior datasets spanning **10 distinct domains** (e.g., movies, books, apps, etc.). From each domain:
@@ -90,7 +90,7 @@ We curated real-world user behavior datasets spanning **10 distinct domains** (e
 - For each selected user, we extracted their **chronologically ordered behavioral stream**
 - The data was then **cleaned, anonymized, and formatted** into a unified structure for downstream persona modeling
 
-🔗 [**Browse the Preprocessed Dataset on HuggingFace**](https://huggingface.co/datasets/deeper-team/DEEPER_preprocess_data)
+🔗 [Browse the Preprocessed Dataset on HuggingFace](https://huggingface.co/datasets/deeper-team/DEEPER_preprocess_data)
 
 
 This preprocessed data forms the foundation for constructing user contexts and generating supervised training examples.
@@ -110,5 +110,24 @@ This preprocessed data forms the foundation for constructing user contexts and g
 
 ### 👥 2. User Context Data
 
+We construct structured multi-turn user contexts from the filtered preprocessed user data. These contexts simulate **step-by-step persona refinement**, supporting fine-grained modeling across time windows.
+
+Each user context includes:
+- Chronologically segmented **rating sequences** per iteration
+- Corresponding **item metadata** (e.g., item ID, title, category)
+- Multiple rounds per user to support **persona updates over time**
+
+📁 The dataset is organized into:
+
+```plaintext
+user_context_test/
+  ├── iteration_1.json
+  ├── iteration_2.json
+  ├── iteration_3.json
+  └── iteration_4.json
+user_context_train/
+  ├── iteration_1.json
+  └── iteration_2.json
+```
 
 ### 🧠 3. DEEPER Training Data
