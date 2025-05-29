@@ -80,7 +80,13 @@ Instead of blindly updating user personas, DEEPER leverages **prediction-behavio
 
 We conduct comprehensive evaluations on **4 benchmark datasets** across **10 diverse domains** to assess DEEPER’s ability to model evolving personas and predict user behavior.
 
-## Key Findings
+<p align="center">
+  <img src="src/main_results.png" alt="DEEPER Results Overview" width="750"/>
+</p>
+<p align="center"><i>Figure: DEEPER outperforms baselines in accuracy, coherence, and generalization across all domains.</i></p>
+
+
+#### Key Findings
 
 - ✅ **Continual Persona Optimization**  
   DEEPER achieves **32.2% average MAE reduction** over four refinement rounds, consistently improving persona quality beyond all baselines through discrepancy-driven direction refinement.
@@ -92,12 +98,6 @@ We conduct comprehensive evaluations on **4 benchmark datasets** across **10 div
   A three-part reward function—Previous Preservation, Current Reflection, Future Advancement—guides refinement. DEEPER yields the **largest future MAE reduction (avg. −0.222) across all metrics.
 - 🔁 **Two-Stage Reinforcement Learning Enhances Refinement**  
   Two-stage self-exploration, reward assignment, and Direct Preference Optimization (DPO) training progressively enhance refinement quality, ensuring stable updates and mitigating performance drift.
-
-
-<p align="center">
-  <img src="src/main_results.png" alt="DEEPER Results Overview" width="750"/>
-</p>
-<p align="center"><i>Figure: DEEPER outperforms baselines in accuracy, coherence, and generalization across all domains.</i></p>
 
 ---
 
