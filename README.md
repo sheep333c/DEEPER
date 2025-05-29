@@ -1,4 +1,17 @@
-# DEEPER: Directed Persona Refinement for Dynamic Persona Modeling
+<p align="center">
+  <img src="src/deeper.png" alt="DEEPER Logo" width="140"/>
+</p>
+
+<h1 align="center">DEEPER: Directed Persona Refinement for Dynamic Persona Modeling</h1>
+
+<p align="center">
+  <a href="https://arxiv.org/abs/2502.11078">📄 Paper</a> •
+  <a href="https://github.com/sheep333c/DEEPER.git">💻 Project Page</a> •
+  <a href="https://huggingface.co/deeper-team/DEEPER-llama-8B">🤖 Model</a> •
+  <a href="https://huggingface.co/deeper-team">📂 Dataset Hub</a>
+</p>
+
+---
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
@@ -7,10 +20,6 @@
 By [<sup>1</sup>**Aili Chen**](https://scholar.google.com/citations?user=FAJzMAQAAAAJ&hl=zh-CN), [<sup>2</sup>**Chengyu Du**](https://scholar.google.com.hk/citations?user=tfwhN2gAAAAJ&hl=zh-CN), [<sup>3</sup>**Jiangjie Chen**](https://jiangjiechen.github.io/),  [<sup>4</sup>**Jinghan Xu**](mailto:jhxu21@m.fudan.edu.cn), [<sup>5</sup>**Yikai Zhang**](https://ykzhang721.github.io/), [<sup>6</sup>**Siyu Yuan**](https://siyuyuan.github.io/), et al.  
 
 <sup>1</sup>Fudan University
-
-[[📄 Paper]](https://arxiv.org/abs/2502.11078) | [[💻 Project Page]](https://github.com/sheep333c/DEEPER.git) | [[🤖 Model: DEEPER-llama-8B]](https://huggingface.co/deeper-team/DEEPER-llama-8B) | [[📂 Dataset Hub]](https://huggingface.co/deeper-team)
-
-
 ---
 
 ## 🔍 Overview
