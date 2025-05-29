@@ -76,6 +76,24 @@ Instead of blindly updating user personas, DEEPER leverages **prediction-behavio
 
 ---
 
+## 📊 Experimental Results
+
+We conduct comprehensive evaluations on **4 benchmark datasets** across **10 diverse domains** to assess DEEPER’s ability to model evolving personas and predict user behavior.
+
+Key findings:
+
+- ✅ **Accuracy**: DEEPER significantly outperforms baseline methods on downstream tasks such as next-item prediction and user preference matching.
+- 🔁 **Refinement Stability**: Compared with regeneration-based methods, DEEPER produces smoother and more consistent persona updates across rounds.
+- 🌍 **Cross-Domain Generalization**: DEEPER achieves robust performance in both seen and unseen domains, demonstrating strong transferability.
+- 🧠 **Preference-Aware Learning**: DPO-based training enables DEEPER to generate more aligned and behavior-grounded personas.
+
+<p align="center">
+  <img src="figures/main_results.png" alt="DEEPER Results Overview" width="750"/>
+</p>
+<p align="center"><i>Figure: DEEPER outperforms baselines in accuracy, coherence, and generalization across all domains.</i></p>
+
+---
+
 ## 🛠 Installation
 
 We recommend using Python 3.10 and Conda.  
