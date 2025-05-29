@@ -90,20 +90,25 @@ We curated real-world user behavior datasets spanning **10 distinct domains** (e
 - For each selected user, we extracted their **chronologically ordered behavioral stream**
 - The data was then **cleaned, anonymized, and formatted** into a unified structure for downstream persona modeling
 
+🔗 [**Browse the Preprocessed Dataset on HuggingFace**](https://huggingface.co/datasets/deeper-team/DEEPER_preprocess_data)
+
+
 This preprocessed data forms the foundation for constructing user contexts and generating supervised training examples.
 
-| Dataset Name                                               | Abbreviation               | Usage      | # Train Users | # Eval Users | # Train Examples |
-|------------------------------------------------------------|----------------------------|------------|---------------|--------------|------------------|
-| Food.com Recipes and Interactions                          | Recipe                     | Train/Eval | 1000          | 356          | A                |
-| Amazon Reviews - Books                                     | Book                       | Train/Eval | 3000          | 897          | B                |
-| Amazon Reviews - Clothing, Shoes, and Jewelry              | Clothing Shoes and Jewelry| Train/Eval | 300           | 243          | C                |
-| Google Local Data (New York, 2021)                         | Local Business             | Train/Eval | 2500          | 826          | D                |
-| MovieLens 20M                                              | MovieLens                  | Train/Eval | 3000          | 1000         | E                |
-| Amazon Reviews - Art, Crafts, and Sewing                   | Art Crafts and Sewing      | Eval       | -             | 86           | F                |
-| Amazon Reviews - Automotive                                | Automative                 | Eval       | -             | 143          | G                |
-| Amazon Reviews - Sports and Outdoors                       | Sports and Outdoors        | Eval       | -             | 236          | H                |
-| Amazon Reviews - Grocery and Gourmet Food                  | Grocery and Gourmet Food   | Eval       | -             | 185          | I                |
+| Dataset                                                | Abbreviation               | Usage      | # Users in Train | # Users in Eval | Domain Label |
+|--------------------------------------------------------|----------------------------|------------|------------------|------------------|--------------|
+| Food.com Recipes and Interactions                      | Recipe                     | Train/Eval | 1000             | 356              | A            |
+| Amazon Reviews (Books)                                 | Book                       | Train/Eval | 3000             | 897              | B            |
+| Amazon Reviews (Clothing Shoes and Jewelry)            | Clothing Shoes and Jewelry| Train/Eval | 300              | 243              | C            |
+| Google Local Data (New York, 2021)                     | Local Business             | Train/Eval | 2500             | 826              | D            |
+| Amazon Reviews (Movies and TV)                         | Movies and TV              | Train/Eval | 1000             | 837              | E            |
+| MovieLens 20M                                          | MovieLens                  | Train/Eval | 3000             | 1000             | F            |
+| Amazon Reviews (Art Crafts and Sewing)                 | Art Crafts and Sewing      | Eval       | -                | 86               | G            |
+| Amazon Reviews (Automotive)                            | Automative                 | Eval       | -                | 143              | H            |
+| Amazon Reviews (Sports and Outdoors)                   | Sports and Outdoors        | Eval       | -                | 236              | I            |
+| Amazon Reviews (Grocery and Gourmet Food)              | Grocery and Gourmet Food   | Eval       | -                | 185              | J            |
 
 ### 👥 2. User Context Data
+
 
 ### 🧠 3. DEEPER Training Data
