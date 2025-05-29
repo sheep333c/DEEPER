@@ -134,3 +134,7 @@ user_context_train/
 ```
 
 ### 🧠 3. DEEPER Training Data
+We construct the final training set using DEEPER’s self-sampling and iterative optimization framework, fine-tuned over two iterations.
+
+🔗 [Browse the DEEPER Train Dataset on HuggingFace](https://huggingface.co/datasets/deeper-team/DEEPER_train_data)
+
