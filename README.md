@@ -4,41 +4,54 @@
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
 ![Version](https://img.shields.io/badge/version-1.0-yellow)
 
-**Official Implementation of the paper:  
-"DEEPER: Insight into User-Directed Persona Refinement for Dynamic Persona Modeling"**  
-By Aili Chen, Chengyu Du, Jiangjie Chen, et al.  
-[[Paper]](https://arxiv.org/abs/2502.11078) | [[Project Page]](https://github.com/sheep333c/DEEPER.git)
+## 🧠 Model & Data
+
+- 🤖 **Model (DEEPER-llama-8B)**: [https://huggingface.co/deeper-team/DEEPER-llama-8B](https://huggingface.co/deeper-team/DEEPER-llama-8B)  
+- 📂 **Dataset Hub**: [https://huggingface.co/deeper-team](https://huggingface.co/deeper-team)
+
+---
+
+**Official implementation of the paper**  
+**"DEEPER: Insight into User-Directed Persona Refinement for Dynamic Persona Modeling"**  
+by  
+[**Aili Chen**](mailto:alchen20@fudan.edu.cn), [**Chengyu Du**](mailto:cydu24@m.fudan.edu.cn), [**Jiangjie Chen**](mailto:jiangjiec@bytedance.com),  
+[**Jinghan Xu**](mailto:jhxu21@m.fudan.edu.cn), [**Yikai Zhang**](mailto:ykzhang22@m.fudan.edu.cn), [**Siyu Yuan**](mailto:syyuan21@m.fudan.edu.cn), et al.  
+<br>
+**Fudan University**
+
+[[📄 Paper (arXiv)]](https://arxiv.org/abs/2502.11078) | [[💻 Project Page]](https://github.com/sheep333c/DEEPER.git)
 
 ---
 
 ## 🔍 Overview
 
-DEEPER proposes a new *refinement-based paradigm* for **dynamic persona modeling**, addressing the limitations of traditional regeneration and extension methods.
+**DEEPER** introduces a refinement-based paradigm for **dynamic persona modeling**, addressing the shortcomings of prior regeneration and extension approaches.
 
-Instead of blindly updating user personas, DEEPER leverages **prediction-behavior discrepancies** to guide update **directions**, enabling:
+Instead of repeatedly replacing or appending to user personas, DEEPER uses **prediction-behavior discrepancies** to direct persona updates more effectively.
+
+Key benefits:
 - ✨ Continual persona optimization  
-- 🔄 Iterative refinement via RL  
-- 🎯 Improved user behavior prediction across domains
+- 🔄 Iterative RL-based refinement  
+- 🎯 Enhanced behavior prediction across diverse domains
 
 ---
 
 ## 🚀 Features
 
-- A novel **three-goal objective**:  
-  - ✅ Previous Preservation  
-  - ✅ Current Reflection  
-  - ✅ Future Advancement  
+- ✅ **Three-Goal Optimization Framework**:
+  - **Previous Preservation**
+  - **Current Reflection**
+  - **Future Advancement**
 
-- Two-stage **iterative RL training** with DPO (Direct Preference Optimization)
-
-- Evaluated on 4 datasets across **10 domains**, supporting both seen/unseen domain generalization
+- 🔁 **Two-stage reinforcement learning** training strategy
+- 📉 **Improves Mean Absolute Error (MAE)** across 10 domains
+- 📦 Compatible with HuggingFace Transformers
 
 ---
 
 ## 🛠 Installation
 
-We recommend using Python 3.10 and Conda.  
-You’ll also need to install [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory):
+We recommend using Python 3.10 and Conda:
 
 ```bash
 conda create -n deeper python=3.10
