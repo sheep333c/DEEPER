@@ -6,8 +6,7 @@
 
 **Official Implementation of the paper:  
 "DEEPER: Insight into User-Directed Persona Refinement for Dynamic Persona Modeling"**  
-By [**Aili Chen**](https://scholar.google.com/citations?user=FAJzMAQAAAAJ&hl=zh-CN), [**Chengyu Du**](https://scholar.google.com.hk/citations?user=tfwhN2gAAAAJ&hl=zh-CN), [**Jiangjie Chen**](https://jiangjiechen.github.io/),  
-[**Jinghan Xu**](mailto:jhxu21@m.fudan.edu.cn), [**Yikai Zhang**](https://ykzhang721.github.io/), [**Siyu Yuan**](https://siyuyuan.github.io/), et al.  
+By [**Aili Chen**](https://scholar.google.com/citations?user=FAJzMAQAAAAJ&hl=zh-CN), [**Chengyu Du**](https://scholar.google.com.hk/citations?user=tfwhN2gAAAAJ&hl=zh-CN), [**Jiangjie Chen**](https://jiangjiechen.github.io/),  [**Jinghan Xu**](mailto:jhxu21@m.fudan.edu.cn), [**Yikai Zhang**](https://ykzhang721.github.io/), [**Siyu Yuan**](https://siyuyuan.github.io/), et al.  
 
 Fudan University
 
