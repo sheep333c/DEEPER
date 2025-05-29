@@ -15,9 +15,11 @@
 </p>
 
 <p align="center">
-  Affiliation: Fudan University
+  <a href="https://arxiv.org/abs/2502.11078">📄 Paper</a> •
+  <a href="https://github.com/sheep333c/DEEPER.git">💻 Project Page</a> •
+  <a href="https://huggingface.co/deeper-team/DEEPER-llama-8B">🤖 Model</a> •
+  <a href="https://huggingface.co/deeper-team">📂 Dataset Hub</a>
 </p>
-
 
 <p align="center">
   <img src="https://img.shields.io/badge/license-MIT-blue.svg"/>
@@ -26,12 +28,13 @@
 </p>
 
 
+
 <p align="center">
-  <a href="https://arxiv.org/abs/2502.11078">📄 Paper</a> •
-  <a href="https://github.com/sheep333c/DEEPER.git">💻 Project Page</a> •
-  <a href="https://huggingface.co/deeper-team/DEEPER-llama-8B">🤖 Model</a> •
-  <a href="https://huggingface.co/deeper-team">📂 Dataset Hub</a>
+  Affiliation: Fudan University
 </p>
+
+
+
 
 
 
