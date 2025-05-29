@@ -80,12 +80,33 @@ Instead of blindly updating user personas, DEEPER leverages **prediction-behavio
 
 We conduct comprehensive evaluations on **4 benchmark datasets** across **10 diverse domains** to assess DEEPER’s ability to model evolving personas and predict user behavior.
 
-Key findings:
+## Key Findings
 
-- ✅ **Accuracy**: DEEPER significantly outperforms baseline methods on downstream tasks such as next-item prediction and user preference matching.
-- 🔁 **Refinement Stability**: Compared with regeneration-based methods, DEEPER produces smoother and more consistent persona updates across rounds.
-- 🌍 **Cross-Domain Generalization**: DEEPER achieves robust performance in both seen and unseen domains, demonstrating strong transferability.
-- 🧠 **Preference-Aware Learning**: DPO-based training enables DEEPER to generate more aligned and behavior-grounded personas.
+- ✅ **Continual Persona Optimization**  
+  DEEPER enables consistent improvement of persona quality across updates by leveraging discrepancy-based direction search and refinement. It achieves an average **32.2% reduction in prediction error** over four update rounds—significantly outperforming all baseline methods.
+
+- 🌍 **Cross-Domain Generalization**  
+  DEEPER generalizes well to unseen domains. On four out-of-domain datasets (e.g., *Arts Crafts and Sewing*), it achieves an **average MAE reduction of 36.4%**, even surpassing its performance in training domains (29.4%).
+
+- 🌀 **Domain-Specific Optimization Dynamics**  
+  DEEPER exhibits domain-dependent optimization behaviors:
+  - Fast convergence in domains like *Automotive*.
+  - Slower, more gradual refinement in domains like *Movies and TV*.
+  These differences reflect varying complexities in user behavior and interest stability across domains.
+
+- 🧭 **Goal-Driven Direction Search is Crucial**  
+  DEEPER’s refinement relies on a three-goal reward design:
+  - **Previous Preservation** (retain stability),
+  - **Current Reflection** (adapt to recent behavior),
+  - **Future Advancement** (improve prediction).
+  It consistently outperforms baselines across all three goals, with a notable **average MAE reduction of 0.222** in future behavior prediction.
+
+- 🔁 **Two-Stage Reinforcement Learning Enhances Refinement**  
+  DEEPER adopts a staged training approach using **Direct Preference Optimization (DPO)**:
+  - Stage 1: Learns to refine initial personas.
+  - Stage 2: Fine-tunes on previously optimized personas with expanded preference margins.
+  This iterative process boosts model performance and ensures more stable, accurate persona updates.
+
 
 <p align="center">
   <img src="src/main_results.png" alt="DEEPER Results Overview" width="750"/>
