@@ -6,9 +6,9 @@
 
 **Official Implementation of the paper:  
 "DEEPER: Insight into User-Directed Persona Refinement for Dynamic Persona Modeling"**  
-By [**Aili Chen**](https://scholar.google.com/citations?user=FAJzMAQAAAAJ&hl=zh-CN), [**Chengyu Du**](https://scholar.google.com.hk/citations?user=tfwhN2gAAAAJ&hl=zh-CN), [**Jiangjie Chen**](https://jiangjiechen.github.io/),  [**Jinghan Xu**](mailto:jhxu21@m.fudan.edu.cn), [**Yikai Zhang**](https://ykzhang721.github.io/), [**Siyu Yuan**](https://siyuyuan.github.io/), et al.  
+By [<sup>1</sup>**Aili Chen**](https://scholar.google.com/citations?user=FAJzMAQAAAAJ&hl=zh-CN), [<sup>2</sup>**Chengyu Du**](https://scholar.google.com.hk/citations?user=tfwhN2gAAAAJ&hl=zh-CN), [<sup>3</sup>**Jiangjie Chen**](https://jiangjiechen.github.io/),  [<sup>4</sup>**Jinghan Xu**](mailto:jhxu21@m.fudan.edu.cn), [<sup>5</sup>**Yikai Zhang**](https://ykzhang721.github.io/), [<sup>6</sup>**Siyu Yuan**](https://siyuyuan.github.io/), et al.  
 
-Fudan University
+<sup>1</sup>Fudan University
 
 [[📄 Paper]](https://arxiv.org/abs/2502.11078) | [[💻 Project Page]](https://github.com/sheep333c/DEEPER.git) | [[🤖 Model: DEEPER-llama-8B]](https://huggingface.co/deeper-team/DEEPER-llama-8B) | [[📂 Dataset Hub]](https://huggingface.co/deeper-team)
 
