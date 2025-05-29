@@ -88,7 +88,7 @@ Key findings:
 - 🧠 **Preference-Aware Learning**: DPO-based training enables DEEPER to generate more aligned and behavior-grounded personas.
 
 <p align="center">
-  <img src="figures/main_results.png" alt="DEEPER Results Overview" width="750"/>
+  <img src="src/main_results.png" alt="DEEPER Results Overview" width="750"/>
 </p>
 <p align="center"><i>Figure: DEEPER outperforms baselines in accuracy, coherence, and generalization across all domains.</i></p>
 
