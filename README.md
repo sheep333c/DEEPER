@@ -37,9 +37,12 @@ Instead of blindly updating user personas, DEEPER leverages **prediction-behavio
 
 ## 🛠 Installation
 
-We recommend using Python 3.8 and Conda:
+We recommend using Python 3.10 and Conda.  
+You’ll also need to install [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory):
 
 ```bash
 conda create -n deeper python=3.10
 conda activate deeper
-pip install -r requirements.txt
+git clone https://github.com/hiyouga/LLaMA-Factory.git
+cd LLaMA-Factory
+pip install -e ".[torch,metrics]" --no-build-isolation
