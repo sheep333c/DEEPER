@@ -13,13 +13,27 @@
 
 ---
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
-![Version](https://img.shields.io/badge/version-1.0-yellow)
+<p align="center">
+  <img src="https://img.shields.io/badge/license-MIT-blue.svg"/>
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen"/>
+  <img src="https://img.shields.io/badge/version-1.0-yellow"/>
+</p>
 
-By [<sup>1</sup>**Aili Chen**](https://scholar.google.com/citations?user=FAJzMAQAAAAJ&hl=zh-CN), [<sup>2</sup>**Chengyu Du**](https://scholar.google.com.hk/citations?user=tfwhN2gAAAAJ&hl=zh-CN), [<sup>3</sup>**Jiangjie Chen**](https://jiangjiechen.github.io/),  [<sup>4</sup>**Jinghan Xu**](mailto:jhxu21@m.fudan.edu.cn), [<sup>5</sup>**Yikai Zhang**](https://ykzhang721.github.io/), [<sup>6</sup>**Siyu Yuan**](https://siyuyuan.github.io/), et al.  
+---
 
-<sup>1</sup>Fudan University
+### 👨‍💻 Authors
+
+<sup>1</sup> [**Aili Chen**](https://scholar.google.com/citations?user=FAJzMAQAAAAJ&hl=zh-CN)  
+<sup>2</sup> [**Chengyu Du**](https://scholar.google.com.hk/citations?user=tfwhN2gAAAAJ&hl=zh-CN)  
+<sup>3</sup> [**Jiangjie Chen**](https://jiangjiechen.github.io/)  
+<sup>4</sup> [**Jinghan Xu**](mailto:jhxu21@m.fudan.edu.cn)  
+<sup>5</sup> [**Yikai Zhang**](https://ykzhang721.github.io/)  
+<sup>6</sup> [**Siyu Yuan**](https://siyuyuan.github.io/)
+
+<br>
+
+**Affiliation**: Fudan University
+
 ---
 
 ## 🔍 Overview
