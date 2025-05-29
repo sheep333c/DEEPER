@@ -76,3 +76,34 @@ conda activate deeper
 git clone https://github.com/hiyouga/LLaMA-Factory.git
 cd LLaMA-Factory
 pip install -e ".[torch,metrics]" --no-build-isolation
+```
+
+---
+
+## 📂 Data
+We organize the DEEPER dataset into three key components, all available via our [📂 HuggingFace Dataset Hub](https://huggingface.co/deeper-team):
+
+### 📌 1. Preprocessed Data
+We curated real-world user behavior datasets spanning **10 distinct domains** (e.g., movies, books, apps, etc.). From each domain:
+
+- We randomly selected users with **over 50 rating history entries**
+- For each selected user, we extracted their **chronologically ordered behavioral stream**
+- The data was then **cleaned, anonymized, and formatted** into a unified structure for downstream persona modeling
+
+This preprocessed data forms the foundation for constructing user contexts and generating supervised training examples.
+
+| Dataset Name                                               | Abbreviation               | Usage      | # Train Users | # Eval Users | # Train Examples |
+|------------------------------------------------------------|----------------------------|------------|---------------|--------------|------------------|
+| Food.com Recipes and Interactions                          | Recipe                     | Train/Eval | 1000          | 356          | A                |
+| Amazon Reviews - Books                                     | Book                       | Train/Eval | 3000          | 897          | B                |
+| Amazon Reviews - Clothing, Shoes, and Jewelry              | Clothing Shoes and Jewelry| Train/Eval | 300           | 243          | C                |
+| Google Local Data (New York, 2021)                         | Local Business             | Train/Eval | 2500          | 826          | D                |
+| MovieLens 20M                                              | MovieLens                  | Train/Eval | 3000          | 1000         | E                |
+| Amazon Reviews - Art, Crafts, and Sewing                   | Art Crafts and Sewing      | Eval       | -             | 86           | F                |
+| Amazon Reviews - Automotive                                | Automative                 | Eval       | -             | 143          | G                |
+| Amazon Reviews - Sports and Outdoors                       | Sports and Outdoors        | Eval       | -             | 236          | H                |
+| Amazon Reviews - Grocery and Gourmet Food                  | Grocery and Gourmet Food   | Eval       | -             | 185          | I                |
+
+### 👥 2. User Context Data
+
+### 🧠 3. DEEPER Training Data
