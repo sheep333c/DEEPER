@@ -4,8 +4,6 @@
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)
 ![Version](https://img.shields.io/badge/version-1.0-yellow)
 
-**Official Implementation of the paper:  
-"DEEPER: Insight into User-Directed Persona Refinement for Dynamic Persona Modeling"**  
 By [<sup>1</sup>**Aili Chen**](https://scholar.google.com/citations?user=FAJzMAQAAAAJ&hl=zh-CN), [<sup>2</sup>**Chengyu Du**](https://scholar.google.com.hk/citations?user=tfwhN2gAAAAJ&hl=zh-CN), [<sup>3</sup>**Jiangjie Chen**](https://jiangjiechen.github.io/),  [<sup>4</sup>**Jinghan Xu**](mailto:jhxu21@m.fudan.edu.cn), [<sup>5</sup>**Yikai Zhang**](https://ykzhang721.github.io/), [<sup>6</sup>**Siyu Yuan**](https://siyuyuan.github.io/), et al.  
 
 <sup>1</sup>Fudan University
