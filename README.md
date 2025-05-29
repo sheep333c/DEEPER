@@ -58,15 +58,15 @@ Unlike prior work that updates user personas in a static or heuristic manner, DE
 </p>
 <p align="center"><i>Figure 2: Two-stage offline training with DPO, followed by online refinement guided by behavior-prediction error.</i></p>
 
-- 🧭 **Tri-objective reward design** for refinement direction search:
+- 🧭 **Tri-objective reward design** for refinement **Direction Search**:
   - **Previous Preservation** (retain stable traits)
   - **Current Reflection** (adapt to recent behaviors)
   - **Future Advancement** (enhance predictive capability)
 
-- 🤖 **Two-stage iterative training**:
-  - Stage 1: Refine initial personas via reward-supervised sampling  
-  - Stage 2: Fine-tune on optimized personas with broader preference margins  
-  - Training is based on **Direct Preference Optimization (DPO)**, integrating both preference and supervised losses
+- 🤖 **Two-stage iterative offline RL training**:
+  - DEEPER employs a two-stage offline training pipeline comprising direction sampling, goal-driven reward assignment, and preference optimization.  
+  - **Iteration 1** learns to refine initial personas via direction-sampling and multi-objective reward-guided DPO.  
+  - **Iteration 2** fine-tunes on optimized personas with harder preference pairs and expanded reward margins.
 
 - 🔍 **Discrepancy-driven refinement**:
   - Uses prediction errors as feedback signals to inform how personas should evolve—bridging the gap between behavior space (e.g., ratings) and latent persona space.
@@ -74,6 +74,7 @@ Unlike prior work that updates user personas in a static or heuristic manner, DE
 ---
 
 ## 📊 Experimental Results
+
 
 - 🔁 **Continual Optimization**:  
   Achieves **32.2% average MAE reduction** over four rounds—significantly outperforming regeneration- and extension-based methods.
@@ -84,42 +85,21 @@ Unlike prior work that updates user personas in a static or heuristic manner, DE
 - 🌀 **Domain-Specific Dynamics**:  
   Optimization speed varies by domain (e.g., fast convergence in *Automotive*, gradual in *Movies & TV*), revealing DEEPER’s ability to adapt to domain complexities.
 
----
-
-## 🚀 Features Summary
-
-- ✅ Novel *refinement-based* dynamic persona modeling  
-- ✅ Tri-objective reward function: preservation, reflection, advancement  
-- ✅ Two-stage DPO-based iterative refinement  
-- ✅ Generalizes across **10 domains**, including 4 unseen during training  
-- ✅ Open-source implementation and reproducible pipeline
-
----
-
-## 📊 Experimental Results
-
-We conduct comprehensive evaluations on **4 benchmark datasets** across **10 diverse domains** to assess DEEPER’s ability to model evolving personas and predict user behavior.
-
 <p align="center">
   <img src="src/main_results.png" alt="DEEPER Results Overview" width="750"/>
 </p>
 <p align="center"><i>Figure: DEEPER outperforms baselines in accuracy, coherence, and generalization across all domains.</i></p>
 
-
-#### Key Findings
-
-- ✅ **Continual Persona Optimization**  
-  DEEPER achieves **32.2% average MAE reduction** over four refinement rounds, consistently improving persona quality beyond all baselines through discrepancy-driven direction refinement.
-- 🌍 **Cross-Domain Generalization**  
-  Demonstrates strong transferability with **36.4% average MAE reduction** in unseen domains—outperforming its in-domain performance (29.4%).
-- 🌀 **Domain-Specific Optimization Dynamics**  
-  Optimization behavior varies by domain: e.g., *Automotive* converges rapidly; *Movies & TV* requires extended refinement, reflecting domain-specific modeling complexity.
-- 🧭 **Goal-Driven Direction Search is Crucial**  
-  A three-part reward function—Previous Preservation, Current Reflection, Future Advancement—guides refinement. DEEPER yields the **largest future MAE reduction (avg. −0.222) across all metrics.
-- 🔁 **Two-Stage Reinforcement Learning Enhances Refinement**  
-  Two-stage self-exploration, reward assignment, and Direct Preference Optimization (DPO) training progressively enhance refinement quality, ensuring stable updates and mitigating performance drift.
-
 ---
+
+## 🚀 Features Summary
+
+- ✅ Novel *refinement-based* dynamic persona modeling  
+- ✅ Tri-objective reward function: Previous Preservation, Current Reflection, Future Advancement  
+- ✅ Two-stage iterative offline RL framework  
+- ✅ Evaluated on **10 domains**, including **4 unseen domains**  
+- ✅ Trained and tested on data from **4,800+ real users** with multi-turn behavioral histories  
+- ✅ Strong generalization to new users and tasks without re-training  
 
 ## 🛠 Installation
 
