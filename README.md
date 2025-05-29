@@ -11,7 +11,6 @@
   <a href="https://huggingface.co/deeper-team">📂 Dataset Hub</a>
 </p>
 
----
 
 <p align="center">
   <img src="https://img.shields.io/badge/license-MIT-blue.svg"/>
@@ -23,12 +22,7 @@
 
 ### 👨‍💻 Authors
 
-<sup>1</sup> [**Aili Chen**](https://scholar.google.com/citations?user=FAJzMAQAAAAJ&hl=zh-CN)  
-<sup>2</sup> [**Chengyu Du**](https://scholar.google.com.hk/citations?user=tfwhN2gAAAAJ&hl=zh-CN)  
-<sup>3</sup> [**Jiangjie Chen**](https://jiangjiechen.github.io/)  
-<sup>4</sup> [**Jinghan Xu**](mailto:jhxu21@m.fudan.edu.cn)  
-<sup>5</sup> [**Yikai Zhang**](https://ykzhang721.github.io/)  
-<sup>6</sup> [**Siyu Yuan**](https://siyuyuan.github.io/)
+<sup>1</sup> [**Aili Chen**](https://scholar.google.com/citations?user=FAJzMAQAAAAJ&hl=zh-CN)  <sup>2</sup> [**Chengyu Du**](https://scholar.google.com.hk/citations?user=tfwhN2gAAAAJ&hl=zh-CN)  <sup>3</sup> [**Jiangjie Chen**](https://jiangjiechen.github.io/)  <sup>4</sup> [**Jinghan Xu**](mailto:jhxu21@m.fudan.edu.cn)  <sup>5</sup> [**Yikai Zhang**](https://ykzhang721.github.io/)  <sup>6</sup> [**Siyu Yuan**](https://siyuyuan.github.io/)
 
 <br>
 
