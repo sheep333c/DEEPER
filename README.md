@@ -117,6 +117,9 @@ Each user context includes:
 - Corresponding **item metadata** (e.g., item ID, title, category)
 - Multiple rounds per user to support **persona updates over time**
 
+🔗 [Browse the User Context Dataset (Train/Eval) on HuggingFace](https://huggingface.co/datasets/deeper-team/DEEPER_user_context_data/tree/main/user_context_train)
+
+
 📁 The dataset is organized into:
 
 ```plaintext
